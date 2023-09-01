@@ -9,7 +9,7 @@ export default (req, res) => {
   let result = `fibonacci(${num}) is ${fibN}`;
 
   if (fibN < 0) {
-    result = `fibonacci(${num}) is undefined`;
+    result = <string>`fibonacci(${num}) is undefined`;
   }
 
   res.send(result);
